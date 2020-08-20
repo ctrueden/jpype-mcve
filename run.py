@@ -28,3 +28,6 @@ thing = MyClass()
 
 # Execute the method!
 thing.doStuff()
+
+# NB: Can use Java reflection to work around the issue:
+#thing.getClass().getMethod('doStuff', None).invoke(thing)
