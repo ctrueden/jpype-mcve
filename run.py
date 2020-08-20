@@ -30,4 +30,10 @@ thing = MyClass()
 thing.doStuff()
 
 # NB: Can use Java reflection to work around the issue:
-#thing.getClass().getMethod('doStuff', None).invoke(thing)
+#
+# thing.getClass().getMethod('doStuff').invoke(thing)
+#
+# -- OR --
+#
+# from java.lang import String
+# thing.getClass().getMethod('doStuff', [String]).invoke(thing, ['hello'])
