@@ -19,6 +19,8 @@ classpath = System.getProperty('java.class.path')
 print(f'Class path = {classpath}')
 
 # Load the class.
+#from com.mystuff import MyClass
+# HACK: Avoid problem with direct jpype-style import.
 MyClass = importWorkaround('com.mystuff.MyClass')
 
 # Create an instance of the class.
