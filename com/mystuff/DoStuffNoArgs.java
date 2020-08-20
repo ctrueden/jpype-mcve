@@ -1,5 +1,5 @@
 package com.mystuff;
-public interface Interface1 {
+public interface DoStuffNoArgs {
   default void doStuff() {
     System.out.println("doStuff()");
   }
